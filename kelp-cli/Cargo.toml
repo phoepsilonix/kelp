@@ -1,0 +1,15 @@
+[package]
+name = "kelp-cli"
+version = "0.5.0"
+edition = "2021"
+authors = ["Taro Yamashita <taro.ymst@gmail.com>"]
+description = "CLI tool for kelp Japanese conversion library"
+
+[dependencies]
+kelp = { path = ".." }
+clap = { version = "^4", features = ["derive"] }
+
+[[bin]]
+name = "kelp-cli"
+path = "src/main.rs"
+

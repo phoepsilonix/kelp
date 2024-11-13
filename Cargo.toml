@@ -10,9 +10,11 @@ license-file = "LICENSE"
 description = "A convert tool for Japanese."
 documentation = "https://panther-king.github.io/kelp/kelp/"
 
-[dependencies]
-clap = { version = "^4", features = ["derive"] }
+[workspace]
+members = ["kelp-cli"]
 
-[[bin]]
-name = "kelp-cli"
-path = "src/bin/kelp.rs"
+[dependencies]
+
+[lib]
+name = "kelp"
+path = "src/lib.rs"
